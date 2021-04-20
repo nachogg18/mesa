@@ -1,0 +1,10 @@
+<form action="." method="POST">
+
+{% csrf_token %}
+    <h1>Consultas</h1>
+    {% for consulta in object_list %}
+        <ul>{{ consulta }}</ul>
+    {% endfor %}
+    </l1>
+<button type="submit">SUBMIT</button>
+</form>
